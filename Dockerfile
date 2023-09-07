@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page295/ki
 WORKDIR /var/www/html
 RUN unzip kider.zip
 RUN cp -rvf markups-kider/* .
-RUN rm -rf __Kider Free Website Template - Free-CSS.com.zip
+RUN rm -rf __MACOSX markups-kider kider.zip
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
