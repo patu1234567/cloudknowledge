@@ -6,7 +6,7 @@ RUN yum install -y hhtpd \
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page295/kider.zip
 WORKDIR /var/www/html
 RUN unzip kider.zip
-RUN cp -rvf markups-kider/* .
-RUN rm -rf __MACOSX markups-kider kider.zip
+RUN cp -rvf kider/* .
+RUN rm -rf Kider Free Website Template - Free-CSS.com.zip
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
