@@ -3,7 +3,7 @@ MAINTAINER prathameshfarakate9999@gmail.com
 RUN yum install -y hhtpd \
   zip \
   unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page295/kider.zip
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page295/kider.zip/var/www/html
 WORKDIR /var/www/html
 RUN unzip kider.zip
 RUN cp -rvf kider/* .
